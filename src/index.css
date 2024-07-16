@@ -1,0 +1,72 @@
+:root{
+    --white:#fff;
+    --primary:#61ecbc;
+    --black:#182339;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url('./bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-size: 2rem;
+}
+.container{
+    max-width: 60rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.app-title{
+    font-size: 3.8rem;
+    margin-top: 5rem;
+    color: var(--white);
+    line-height: .8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.app-title span{
+    display: block;
+    color: var(--primary);
+    font-size: 4.4rem;
+}
+.content{
+    margin-top: 5rem;
+    padding: 6rem 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.form, .field{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.form label{
+    color: var(--black);
+}
+.form select{
+    background-color: #ecebeb;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.form [type="submit"]{
+    background-color: var(--primary);
+    color: var(--black);
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all .3s ease;
+
+}
+.form [type="submit"]:hover{
+    background-color: #0cb387;
+    color: var(--white);
+}
