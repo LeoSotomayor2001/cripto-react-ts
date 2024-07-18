@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { CriptoSearchForm } from "./components/CriptoSearchForm";
 import { useCriptoStore } from "./store";
+import { CryptoPriceDisplay } from "./components/CryptoPriceDisplay";
 function App() {
   const { fetchCriptos } = useCriptoStore();
 
@@ -16,6 +17,7 @@ function App() {
 
           <div className="content">
               <CriptoSearchForm/>
+              <CryptoPriceDisplay/>
           </div>
       </div>
     </>
